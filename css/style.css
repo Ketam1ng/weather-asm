@@ -1,4 +1,66 @@
 body {
     margin: 0;
     padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: lightskyblue;
+}
+
+.weather-card h3, h1, p{
+    margin: 0px 0px 10px 10px;
+    color: white;
+}
+
+.weather-card p {
+    margin-top: -10px;
+}
+
+.weather-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 20px;
+    padding: 10px 100px 0px 100px;
+}
+
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 150px;
+    border-radius: 8px;
+    background-color: rgba(64, 107, 126, 1);
+    padding-top: 10px;
+}
+
+.temp-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
+    margin-top: -10px;
+}
+
+.input-container {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.search-box {
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border: 1px solid lightcoral;
+    border-radius: 8px;
+    background-color: lightcyan;
+    padding: 0px 20px 0px 20px;
+}
+
+.search-box:focus {
+    border: 1px solid black;
+    outline: none;
 }
